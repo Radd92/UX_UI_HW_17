@@ -1,10 +1,13 @@
-body, html {
+body,
+html {
     margin: 0;
     padding: 0;
 }
+
 body {
     font-family: 'Playfair Display';
 }
+
 .wrapper {
 
     height: 100%;
@@ -14,11 +17,12 @@ body {
     background-size: cover;
 }
 
-header {  
+header {
     width: 100%;
     background-color: #d9d9d93a;
     color: white;
 }
+
 navbar {
     width: 90%;
     margin: 0 auto;
@@ -27,46 +31,55 @@ navbar {
     flex-direction: row;
     align-items: center;
 }
+
 .logo {
     width: 23%;
     padding: 1%;
 }
+
 nav {
     width: 73%;
     padding: 1%
 }
+
 ul {
     width: 100%;
     display: flex;
     justify-content: right;
     flex-direction: row;
 }
+
 ul li {
     width: 10%;
     text-decoration: none;
     list-style: none;
 }
+
 .heroImg {
     width: 90%;
-    margin: 5% auto; 
+    margin: 5% auto;
 }
+
 .content {
     display: flex;
     justify-content: space-between;
     flex-direction: row;
 }
+
 .text {
     width: 50%;
     padding: 5%;
     color: white;
     font-family: 'lato';
 }
-.text p { 
+
+.text p {
     letter-spacing: 2px;
     line-height: 25px;
     font-size: 15px;
     font-weight: 300;
-    }
+}
+
 .myimagetext p {
     color: white;
     position: absolute;
@@ -76,18 +89,22 @@ ul li {
     padding: 0 4%;
     margin: 17px;
 }
+
 .my-projects {
     color: white;
     text-align: center;
 }
+
 .my-projects img {
-    margin: 2%; 
+    margin: 2%;
 
 }
+
 .my-projects h2 {
     letter-spacing: 4px;
     font-size: 35px;
 }
+
 footer {
     display: flex;
     justify-content: center;
@@ -99,6 +116,130 @@ footer {
     text-align: center;
 
 }
+
 footer p {
     font-size: 20px;
+}
+
+@media screen and (max-width: 600px) {
+    .wrapper {
+
+        height: 100%;
+        background-image: url("../Images/Background.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    header {
+        width: 100%;
+        background-color: #d9d9d93a;
+        color: white;
+    }
+
+    navbar {
+        width: 95%;
+        justify-content: center;
+    }
+
+    .logo {
+        width: 18%;
+    }
+
+    .logo img {
+        width: 100%;
+    }
+
+    nav {
+        width: 78%;
+    }
+
+    ul {
+        width: 100%;
+        justify-content: center;
+    }
+
+    ul li {
+        width: 15%;
+    }
+
+    .heroImg {
+        width: 95%;
+        margin: 7% auto;
+    }
+
+    .content {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .text {
+        width: 75%;
+    }
+
+    .text p {
+        letter-spacing: 2px;
+        line-height: 25px;
+        font-size: 15px;
+        font-weight: 300;
+        text-align: justify;
+
+    }
+
+    .myimagetext {
+        text-align: center;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .myimagetext p {
+        font-size: 49px;
+        width: 38%;
+        line-height: 80px;
+        padding: 0 4%;
+        margin: 30px;
+        text-align: left;
+    }
+
+    .my-projects {
+        color: white;
+        text-align: center;
+        width: 100%;
+    }
+
+    .my-projects img {
+        margin: 5% auto;
+        width: 50%;
+
+
+    }
+
+    .my-projects h2 {
+        letter-spacing: 4px;
+        font-size: 35px;
+    }
+
+    footer {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+        background-color: #d9d9d93a;
+        color: white;
+        height: 200px;
+        text-align: center;
+
+    }
+
+    .contact img {
+        width: 5%;
+    }
+
+    footer p {
+        font-size: 15px;
+    }
+
+
 }
